@@ -40,28 +40,29 @@
                 <!-- Kitchenware Card Section -->
                 <h2 class="mb-4 text-black font-semibold">Kitchenware</h2>
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                    <div class="card bg-base-100 rounded-lg border ">
+
+                    <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
                             <img src="./images/prod1.png" alt="" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <div class="rating mb-2">
+                            <div id="" class="rating mb-2">
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" checked />
                             </div>
-                            <h2 class="text-[#111] font-semibold">K. Accessories</h2>
+                            <h2 id="card1-name" class="text-[#111] font-semibold">K. Accessories</h2>
                             <p class="text-[#111] opacity-70">39.00 TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 rounded-lg border ">
+                    <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
                             <img src="./images/prod2.png" alt="" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <div class="rating mb-2">
+                            <div id="" class="rating mb-2">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
@@ -72,7 +73,7 @@
                             <p class="text-[#111] opacity-70">25.00 TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 rounded-lg border ">
+                    <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
                             <img src="./images/prod3.png" alt="" class="rounded-xl" />
                         </figure>
@@ -90,9 +91,9 @@
                     </div>
                 </div>
                 <!-- Sportswear Card Section.............. -->
-                <h2 class=" mt-10 mb-4 text-black font-semibold">Sportswear</h2>
+                <h2 id="" class=" mt-10 mb-4 text-black font-semibold">Sportswear</h2>
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                    <div class="card bg-base-100 rounded-lg border ">
+                    <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
                             <img src="./images/prod4.png" alt="" class="rounded-xl" />
                         </figure>
@@ -108,7 +109,7 @@
                             <p class="text-[#111] opacity-70">49.00 TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 rounded-lg border ">
+                    <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
                             <img src="./images/prod5.png" alt="" class="rounded-xl" />
                         </figure>
@@ -124,7 +125,7 @@
                             <p class="text-[#111] opacity-70">69.00 TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 rounded-lg border ">
+                    <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
                             <img src="./images/prod6.png" alt="" class="rounded-xl" />
                         </figure>
@@ -146,34 +147,54 @@
                 <div class="bg-white p-2 mt-10 rounded-md">
                     <h2 class="text-lg font-medium mb-5">Have coupon?</h2>
                     <div class="relative">
-                        <input type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16" />
+                        <input id="" type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16" />
                         <button
                             class="btn btn-primary bg-[#E527B2] border-none absolute top-0 right-0 rounded-l-none text-white">Apply</button>
                     </div>
                 </div>
 
                 <div class="bg-white p-2 mt-5 rounded-md">
-                    <div class=" my-5 space-y-3">
-                        <p>Total Price:</p>
-                        <p>Discount:</p>
-                        <p>Total:</p>
+                    <div id="cards-entry" class=" my-5 space-y-3">
+                        
                     </div>
                     <hr>
                     <div class="my-5 space-y-3">
-                        <p>Total Price:</p>
-                        <p>Discount:</p>
-                        <p>Total:</p>
+                        <p>Total Price: <span id="total-price">00.00</span> TK</p>
+                        <p>Discount: <span id="discount">00.00</span> TK</p>
+                        <p>Total: <span id="grand-total">00.00</span> TK</p>
                     </div>
                     <hr>
-                    <div class="text-center mt-5 -mb-7">
-                        <button class=" px-10 py-3 rounded-lg font-semibold text-white bg-[#E527B2]">Make Purchase</button>
+                    <div class="text-center mt-5 -mb-5">
+                        
+                        <button><a href="#my_modal_1" class=" px-10 py-3 rounded-lg font-semibold text-white bg-[#E527B2]">Make Purchase</a></button>
                     </div>
                 </div>
             </div>
         </div>
 
     </main>
-    <!-- Modals -->
+    <!-- Modal -->
+    <div class="modal" id="my_modal_1">
+        <div class="modal-box">
+            <div>
+                <div class="card bg-base-100">
+                    <figure class="px-10">
+                        <img src="./images/congo.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-black">Congratulations</h2>
+                        <p class="mb-3">Your Purchase the product</p>
+                        
+                        <div class="modal-action">
+                            <a href="#" class="btn btn-primary border-none bg-[#E527B2] text-white">Go Home</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
