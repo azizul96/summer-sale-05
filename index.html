@@ -147,9 +147,9 @@
                 <div class="bg-white p-2 mt-10 rounded-md">
                     <h2 class="text-lg font-medium mb-5">Have coupon?</h2>
                     <div class="relative">
-                        <input id="" type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16" />
-                        <button
-                            class="btn btn-primary bg-[#E527B2] border-none absolute top-0 right-0 rounded-l-none text-white">Apply</button>
+                        <input id="coupon-input" type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16" />
+                        <button id="apply-btn"
+                            class="btn btn-primary bg-[#E527B2] border-none absolute top-0 right-0 rounded-l-none text-white" disabled >Apply</button>
                     </div>
                 </div>
 
@@ -164,9 +164,9 @@
                         <p>Total: <span id="grand-total">00.00</span> TK</p>
                     </div>
                     <hr>
-                    <div class="text-center mt-5 -mb-5">
+                    <div class="text-center mt-5 -mb-7">
                         
-                        <button><a href="#my_modal_1" class=" px-10 py-3 rounded-lg font-semibold text-white bg-[#E527B2]">Make Purchase</a></button>
+                        <button><a href="#my_modal_1" class=" btn btn-primary px-10  rounded-lg font-semibold text-white bg-[#E527B2] border-none " onclick="clickHandler(this)" id="purchase-btn" disabled >Make Purchase</a></button>
                     </div>
                 </div>
             </div>
