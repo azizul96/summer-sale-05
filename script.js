@@ -1,5 +1,4 @@
 
-
 let totalPrice = 0;
 function clickHandler(target){
     const cardsEntry = document.getElementById('cards-entry')
@@ -21,7 +20,6 @@ function clickHandler(target){
     else{
         applyButton.setAttribute("disabled",  true)
     }
-    
     const makePurchase = document.getElementById('purchase-btn')
     if(totalPrice > 0){
         makePurchase.removeAttribute('disabled');
@@ -33,11 +31,10 @@ function clickHandler(target){
     document.getElementById('grand-total').innerText = totalPrice.toFixed(2) 
 }
 
-
 document.getElementById('apply-btn').addEventListener('click', function(){
 
     const couponCode = document.getElementById('coupon-input');
-    const couponValue = couponCode.value.toUpperCase();
+    const couponValue = couponCode.value;
     if(couponValue === "SELL200"){
         const discount = 20 * totalPrice / 100;
         const discountField = document.getElementById('discount')
