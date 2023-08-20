@@ -22,10 +22,10 @@
     <header>
         <div class="hero py-10 bg-[#F9F6E2]">
             <div class="hero-content flex-col lg:flex-row-reverse gap-8">
-                <img src="./images/Summer 1.png" class="max-w-sm  " />
-                <div class="text-center space-y-7">
+                <img src="./images/Summer 1.png" class="sm:max-w-sm  " />
+                <div class="text-center space-y-7 ">
                     <p>---SALE FEVER---</p>
-                    <h1 class="text-5xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20%
+                    <h1 class="sm:text-2xl md:text-4xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20%
                             off</span></h1>
                     <span class="text-[#111]">Use Promo Code</span>
                     <button class="btn bg-[#E527B2] px-5 py-2 text-white">SELL200</button>
@@ -43,7 +43,7 @@
 
                     <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
-                            <img src="./images/prod1.png" alt="" class="rounded-xl" />
+                            <img src="./images/prod1.png" alt="" class="max-h-32 rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div id="" class="rating mb-2">
@@ -59,7 +59,7 @@
                     </div>
                     <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
-                            <img src="./images/prod2.png" alt="" class="rounded-xl" />
+                            <img src="./images/prod2.png" alt="" class="rounded-xl max-h-32" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div id="" class="rating mb-2">
@@ -75,7 +75,7 @@
                     </div>
                     <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
-                            <img src="./images/prod3.png" alt="" class="rounded-xl" />
+                            <img src="./images/prod3.png" alt="" class="rounded-xl max-h-32" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating mb-2">
@@ -92,10 +92,10 @@
                 </div>
                 <!-- Sportswear Card Section.............. -->
                 <h2 id="" class=" mt-10 mb-4 text-black font-semibold">Sportswear</h2>
-                <div class="flex-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 mb-10">
                     <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
-                            <img src="./images/prod4.png" alt="" class="rounded-xl" />
+                            <img src="./images/prod4.png" alt="" class="rounded-xl max-h-32" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating mb-2">
@@ -111,7 +111,7 @@
                     </div>
                     <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
-                            <img src="./images/prod5.png" alt="" class="rounded-xl" />
+                            <img src="./images/prod5.png" alt="" class="rounded-xl max-h-32" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating mb-2">
@@ -127,7 +127,7 @@
                     </div>
                     <div onclick="clickHandler(this)" class="card bg-base-100 rounded-lg border ">
                         <figure class=" bg-gray-200 m-2 px-5 py-5">
-                            <img src="./images/prod6.png" alt="" class="rounded-xl" />
+                            <img src="./images/prod6.png" alt="" class="rounded-xl max-h-32" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating mb-2">
@@ -159,9 +159,9 @@
                     </div>
                     <hr>
                     <div class="my-5 space-y-3">
-                        <p>Total Price: <span id="total-price">00.00</span> TK</p>
-                        <p>Discount: <span id="discount">00.00</span> TK</p>
-                        <p>Total: <span id="grand-total">00.00</span> TK</p>
+                        <p><span class="font-semibold">Total Price:</span> <span id="total-price">00.00</span> TK</p>
+                        <p><span class="font-semibold">Discount:</span> <span id="discount">00.00</span> TK</p>
+                        <p><span class="font-semibold">Total:</span> <span id="grand-total">00.00</span> TK</p>
                     </div>
                     <hr>
                     <div class="text-center mt-5 -mb-7">
@@ -177,16 +177,15 @@
     <div class="modal" id="my_modal_1">
         <div class="modal-box">
             <div>
-                <div class="card bg-base-100">
+                <div class="card bg-base-100 ">
                     <figure class="px-10">
-                        <img src="./images/congo.png" alt="" class="rounded-xl" />
+                        <img src="./images/congo.png" alt="" class="max-w-[100px]  rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div class="card-body items-center text-center space-y-1">
                         <h2 class="card-title text-black">Congratulations</h2>
-                        <p class="mb-3">Your Purchase the product</p>
-                        
+                        <p class="text-xs">Your Purchase the product</p>
                         <div class="modal-action">
-                            <a href="#" class="btn btn-primary border-none bg-[#E527B2] text-white">Go Home</a>
+                            <a id="go-home" href="#" class=" btn btn-sm border-none bg-[#E527B2] text-white">Go Home</a>
                             
                         </div>
                     </div>

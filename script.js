@@ -48,53 +48,6 @@ document.getElementById('apply-btn').addEventListener('click', function(){
     }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function cardNameEntry(cardName){
-//     const cardEntryArea = document.getElementById('card-entry-area')
-//     const p = document.createElement('p')
-//     const count = cardEntryArea.childElementCount
-//     p.innerHTML = `${count +1}. ${cardName}`
-//     cardEntryArea.appendChild(p)
-// }
-
-
-
-// document.getElementById("card1").addEventListener('click', function(){
-//     cardNameEntry("K. Accessories" )
-    
-// })
-// ------------------------------------------------------
-
-// function clickHandler(target){
-//     const cardsEntry = document.getElementById('cards-entry')
-//     const card = target.childNodes[3].childNodes[3].innerText
-//     const p = document.createElement('p')
-//     p.innerText = card;
-//     cardsEntry.appendChild(p);
-// }
+document.getElementById('go-home').addEventListener('click', function(){
+    window.location.href = 'index.html'
+})
